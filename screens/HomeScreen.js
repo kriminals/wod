@@ -31,6 +31,7 @@ export default class HomeScreen extends React.Component {
               style={styles.welcomeImage}
             />
           </View>
+          <Text style={styles.day}>Gonday</Text>
 
           <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
@@ -42,7 +43,7 @@ export default class HomeScreen extends React.Component {
             </View>
 
             <Text style={styles.getStartedText}>
-              Change this text and your app will probably... automatically reload.
+              Change this text and your app wil probably... automatically reload.
             </Text>
           </View>
 
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 80,
     resizeMode: 'contain',
-    marginTop: 3,
+    marginTop: 5,
     marginLeft: -10,
   },
   getStartedContainer: {
@@ -170,6 +171,14 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',
     textAlign: 'center',
+  },
+  day: {
+    fontSize: 32,
+
+    fontWeight: 'bold',
+    color: 'rgba(96,100,109, 1)',
+    textAlign: 'center',
+    paddingBottom: 12,
   },
   navigationFilename: {
     marginTop: 5,
